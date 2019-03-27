@@ -2,13 +2,13 @@
   "name": "react-scripts-redux-saga",
   "version": "0.0.5",
   "description": "Configuration and scripts for Create React App with Redux, React-Redux and Redux-Saga.",
-  "repository": "varijkapil13/create-react-app",
+  "repository": "varijkapil13/react-scripts-redux-saga",
   "license": "MIT",
   "engines": {
     "node": ">=8.10"
   },
   "bugs": {
-    "url": "https://github.com/varijkapil13/create-react-app/issues"
+    "url": "https://github.com/varijkapil13/react-scripts-redux-saga/issues"
   },
   "files": [
     "bin",
