@@ -1,6 +1,15 @@
 {
   "name": "react-scripts-redux-saga",
   "version": "0.0.5",
+  "keywords": [
+    "react-redux",
+    "redux-saga",
+    "create-react-app",
+    "redux",
+    "create react app redux",
+    "cli",
+    "react cli"
+  ],
   "description": "Configuration and scripts for Create React App with Redux, React-Redux and Redux-Saga.",
   "repository": "varijkapil13/react-scripts-redux-saga",
   "license": "MIT",
