@@ -1,6 +1,6 @@
 // Produce action to trigger saga
-import {appActions} from '../constants';
+import { appActions } from '../constants';
 
 export const sampleAppAction = () => ({
-  type: appActions.SAMPLE_ACTION
+  type: appActions.SAMPLE_ACTION,
 });

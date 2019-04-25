@@ -202,7 +202,7 @@ module.exports = function(
   } else {
     reduxArgs = ['install', '--save', verbose && '--verbose'].filter(e => e);
   }
-  reduxArgs.push( 'react-redux', 'redux', 'redux-saga', 'react-router-dom');
+  reduxArgs.push('react-redux', 'redux', 'redux-saga', 'react-router-dom');
 
   console.log();
   console.log(`Installing redux using ${command}...`);
@@ -214,13 +214,14 @@ module.exports = function(
     return;
   }
 
-
   // install developer dependencies for redux-devtools
   let devArgs;
   if (useYarn) {
     devArgs = ['add', '--dev'];
   } else {
-    devArgs = ['install','--dev', '--save', verbose && '--verbose'].filter(e => e);
+    devArgs = ['install', '--dev', '--save', verbose && '--verbose'].filter(
+      e => e
+    );
   }
   devArgs.push('redux-devtools-extension');
 
@@ -233,7 +234,6 @@ module.exports = function(
     console.error(`\`${command} ${devArgs.join(' ')}\` failed`);
     return;
   }
-
 
   if (useTypeScript) {
     verifyTypeScriptSetup();

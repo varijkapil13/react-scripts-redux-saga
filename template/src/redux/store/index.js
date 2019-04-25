@@ -1,4 +1,4 @@
-import reduxStore, {saga} from './redux-store';
+import reduxStore, { saga } from './redux-store';
 import sagas from '../sagas/';
 
 const mainStore = reduxStore();

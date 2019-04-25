@@ -1,1 +1,1 @@
-export {appActions} from './action-types';
+export { appActions } from './action-types';

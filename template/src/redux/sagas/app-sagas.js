@@ -1,10 +1,10 @@
-import {call, put, takeLatest} from 'redux-saga/effects';
-import {appActions} from '../constants';
+import { call, put, takeLatest } from 'redux-saga/effects';
+import { appActions } from '../constants';
 
 const getAsyncData = () => {
   return new Promise(resolve =>
     setTimeout(() => {
-      resolve("Async Data");
+      resolve('Async Data');
     }, 2500)
   );
 };
@@ -12,9 +12,9 @@ const getAsyncData = () => {
 export function* fetchAsyncData() {
   try {
     const response = yield call(getAsyncData);
-    yield put({type: appActions.SAMPLE_ACTION_DATA, payload: response});
+    yield put({ type: appActions.SAMPLE_ACTION_DATA, payload: response });
   } catch (error) {
-    yield put({type: appActions.SAMPLE_ACTION_DATA, payload: error});
+    yield put({ type: appActions.SAMPLE_ACTION_DATA, payload: error });
   }
 }
 

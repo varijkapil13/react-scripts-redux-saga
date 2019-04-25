@@ -1,13 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {connect} from 'react-redux';
-import {sampleAppAction} from './redux/actions/app-actions';
-
+import { connect } from 'react-redux';
+import { sampleAppAction } from './redux/actions/app-actions';
 
 function App(props) {
   return (
-
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -29,19 +27,20 @@ function App(props) {
           Fire Saga action
         </button>
       </header>
-
-
     </div>
   );
 }
 
 const mapStateToProps = state => {
   return {
-    data: state.app.data
+    data: state.app.data,
   };
 };
 const mapDispatchToProps = {
-  sampleAppAction
+  sampleAppAction,
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);
