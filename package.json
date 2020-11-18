@@ -85,7 +85,7 @@
     "workbox-webpack-plugin": "4.2.0"
   },
   "devDependencies": {
-    "semantic-release": "^15.13.3",
+    "semantic-release": "^17.2.3",
     "@semantic-release/commit-analyzer": "^6.1.0",
     "@semantic-release/git": "^7.0.8",
     "@semantic-release/github": "^5.2.10",
